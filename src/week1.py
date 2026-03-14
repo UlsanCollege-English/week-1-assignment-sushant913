@@ -31,7 +31,9 @@ def is_even(n: int) -> bool:
     """
     Return True if n is even, otherwise False.
     """
-    return n % 2 == 0
+    if n % 2 == 0:
+        return True
+    return False
 
 
 def linear_search(nums: Sequence[T], target: T) -> Optional[int]:
