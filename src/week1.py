@@ -38,8 +38,8 @@ def linear_search(nums: Sequence[T], target: T) -> Optional[int]:
     """
     Return the FIRST index where target appears in nums, or None if not found.
     """
-    for i in range(len(nums)):
-        if nums[i] == target:
+    for i, num in enumerate(nums):
+        if num == target:
             return i
     return None
 
