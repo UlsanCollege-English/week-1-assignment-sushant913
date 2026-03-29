@@ -3,8 +3,7 @@ Week 1 — Intro Challenges
 """
 
 from __future__ import annotations
-
-from typing import Iterable, Sequence, Optional, TypeVar
+from typing import Iterable, Sequence, TypeVar
 
 T = TypeVar("T")
 
@@ -17,11 +16,11 @@ def is_even(n: int) -> bool:
     return n % 2 == 0
 
 
-def linear_search(nums: Sequence[T], target: T) -> Optional[int]:
+def linear_search(nums: Sequence[T], target: T) -> int:
     for i, num in enumerate(nums):
         if num == target:
             return i
-    return None
+    return -1
 
 
 def count_occurrences(items: Iterable[T], target: T) -> int:
@@ -32,8 +31,8 @@ def count_occurrences(items: Iterable[T], target: T) -> int:
     return count
 
 
-def last_index(nums: Sequence[T], target: T) -> Optional[int]:
+def last_index(nums: Sequence[T], target: T) -> int:
     for i in range(len(nums) - 1, -1, -1):
         if nums[i] == target:
             return i
-    return None
+    return -1
