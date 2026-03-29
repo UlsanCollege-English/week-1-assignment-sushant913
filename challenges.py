@@ -1,7 +1,3 @@
-"""
-Week 1 — Intro Challenges
-"""
-
 from typing import Iterable, Sequence, Optional, TypeVar
 
 T = TypeVar("T")
